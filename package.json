@@ -1,17 +1,43 @@
 {
+  "homepage": "https://moazkandeel.github.io/Klickit",
   "name": "camp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.16.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "formik": "^2.4.6",
     "react": "^18.3.1",
+    "react-detect-offline": "^2.4.5",
     "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-phone-number-input": "^3.4.5",
+    "react-query": "^3.39.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scroll-to-top": "^3.0.0",
+    "react-simple-image-slider": "^2.4.1",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "web-vitals": "^2.1.4",
+    "websockets": "^0.2.0",
+    "yup": "^1.4.0",
+    "zustand": "^4.5.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +60,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
