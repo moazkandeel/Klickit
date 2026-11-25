@@ -35,7 +35,7 @@ const routers = createBrowserRouter([
    
     ]
   }
-]);
+], { basename: '/Klickit' });
 export default function App() {
   return (
     <RouterProvider router={routers}></RouterProvider>
