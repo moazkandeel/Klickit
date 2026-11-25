@@ -440,6 +440,7 @@ textarea:focus {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        margin-top: 13px;
     }
     .input-group i {
         position: static;
@@ -449,11 +450,19 @@ textarea:focus {
         flex: 0 0 18px;
         z-index: 1;
     }
+    .input-group .pos-1 {
+        align-self: flex-start;
+        margin-top: 13px;
+    }
     .input-group input,
     .input-group textarea {
         flex: 1 1 auto;
         min-width: 0;
         width: auto;
+        margin-top: 0;
+    }
+    .input-group input[name],
+    .input-group textarea[name] {
         margin-left: -30px;
     }
     textarea {
