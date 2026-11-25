@@ -10,7 +10,7 @@ const Contact = () => {
       <h2 className="text-white text-center " id="head">
         Get in touch with us...
       </h2>
-      <p className="text-white text-center h-p" style={{ padding: '2px 25%' }}>
+      <p className="text-white text-center h-p">
         Thank you for your interest in our services. Please fill out the form below or e-mail us at{' '}
         <a href="mailto:info@klickit.co" className="link-mail">
         info@klickit.co

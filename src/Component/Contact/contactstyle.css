@@ -380,3 +380,74 @@ textarea:focus {
 
   }
    */
+/* Base paragraph padding (was inline) */
+.h-p {
+    padding: 2px 25%;
+}
+
+/* Phone layout: override the tablet rules above */
+@media (max-width: 600px) {
+    #head {
+        font-size: 28px;
+        padding: 0 4%;
+    }
+    .h-p {
+        font-size: 15px;
+        padding: 2px 6%;
+    }
+    .box {
+        width: 92%;
+        height: auto;
+    }
+    .imagee {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .title {
+        font-size: 28px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .line {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .box3 {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 4%;
+    }
+    .touch, .touch a {
+        font-size: 16px;
+    }
+    .touch i {
+        font-size: 20px;
+        width: 42px;
+        height: 42px;
+        margin-top: 7px;
+    }
+    .box-1 {
+        width: 100%;
+    }
+    .form input, .form textarea {
+        font-size: 16px;
+        padding-left: 40px;
+    }
+    .form i {
+        font-size: 18px;
+    }
+    .pos, .pos-1 {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+    textarea {
+        height: 110px;
+    }
+    .butun {
+        font-size: 17px;
+        padding: 10px;
+    }
+    .text-muted {
+        font-size: 12px;
+    }
+}
