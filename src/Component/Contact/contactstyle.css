@@ -436,9 +436,17 @@ textarea:focus {
     .form i {
         font-size: 18px;
     }
-    .pos, .pos-1 {
-        margin-top: 12px;
+    .pos {
+        margin-top: 0;
         margin-left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .pos-1 {
+        margin-top: 0;
+        margin-left: 12px;
+        top: 24px;
+        transform: none;
     }
     textarea {
         height: 110px;
