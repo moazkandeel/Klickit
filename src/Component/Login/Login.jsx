@@ -132,7 +132,7 @@ export default function Login() {
                     <Box height={35} />
                     <Box sx={center}>
                       <Avatar
-                        sx={{ ml: { xs: 0, lg: "85px" }, mb: "4px", bgcolor: "#ffffff" }}
+                        sx={{ ml: { xs: 0, lg: "85px" }, mx: { xs: "auto", lg: 0 }, mb: "4px", bgcolor: "#ffffff" }}
                       >
                         <LockOutlinedIcon />
                       </Avatar>
