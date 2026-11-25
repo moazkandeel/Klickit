@@ -33,16 +33,17 @@ const boxstyle = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "75%",
-  height: "70%",
+  width: { xs: "94%", sm: "85%", lg: "75%" },
+  height: { xs: "auto", lg: "70%" },
   bgcolor: "background.paper",
   boxShadow: 24,
 };
 
 const center = {
   position: "relative",
-  top: "50%",
-  left: "30%",
+  top: { xs: 0, lg: "50%" },
+  left: { xs: 0, lg: "30%" },
+  textAlign: { xs: "center", lg: "left" },
 };
 
 // التحقق من صحة البيانات باستخدام Yup
@@ -125,13 +126,13 @@ export default function Register() {
           style={{
             backgroundImage: `url(${bgimg})`,
             backgroundSize: "cover",
-            height: "100vh",
+            minHeight: "100vh",
             color: "#f5f5f5",
           }}
         >
           <Box sx={boxstyle}>
             <Grid container>
-              <Grid item xs={12} sm={12} lg={6}>
+              <Grid item xs={12} sm={12} lg={6} sx={{ display: { xs: "none", lg: "block" } }}>
                 <Box
                   style={{
                     backgroundImage: `url(${bg})`,
@@ -146,18 +147,19 @@ export default function Register() {
               </Grid>
               <Grid item xs={12} sm={12} lg={6}>
                 <Box
-                  style={{
+                  sx={{
                     backgroundSize: "cover",
-                    height: "70vh",
-                    minHeight: "500px",
+                    height: { xs: "auto", lg: "70vh" },
+                    minHeight: { xs: 0, lg: "500px" },
                     backgroundColor: "#3b33d5",
+                    pb: { xs: 4, lg: 0 },
                   }}
                 >
                   <Container>
                     <Box height={35} />
                     <Box sx={center}>
                       <Avatar
-                        sx={{ ml: "85px", mb: "4px", bgcolor: "#ffffff" }}
+                        sx={{ ml: { xs: 0, lg: "85px" }, mb: "4px", bgcolor: "#ffffff" }}
                       >
                         <LockOutlinedIcon />
                       </Avatar>
@@ -172,7 +174,7 @@ export default function Register() {
                       sx={{ mt: 2 }}
                     >
                       <Grid container spacing={1}>
-                        <Grid item xs={12} sx={{ ml: "3em", mr: "3em" }}>
+                        <Grid item xs={12} sx={{ ml: { xs: "1em", sm: "3em" }, mr: { xs: "1em", sm: "3em" } }}>
                           <TextField
                             required
                             fullWidth
@@ -185,7 +187,7 @@ export default function Register() {
                             helperText={formik.touched.username && formik.errors.username}
                           />
                         </Grid>
-                        <Grid item xs={12} sx={{ ml: "3em", mr: "3em" }}>
+                        <Grid item xs={12} sx={{ ml: { xs: "1em", sm: "3em" }, mr: { xs: "1em", sm: "3em" } }}>
                           <TextField
                             required
                             fullWidth
@@ -199,7 +201,7 @@ export default function Register() {
                             helperText={formik.touched.email ? (formik.errors.email || "Example: user@example.com") : ""}
                           />
                         </Grid>
-                        <Grid item xs={12} sx={{ ml: "3em", mr: "3em" }}>
+                        <Grid item xs={12} sx={{ ml: { xs: "1em", sm: "3em" }, mr: { xs: "1em", sm: "3em" } }}>
                           <TextField
                             required
                             fullWidth
@@ -214,7 +216,7 @@ export default function Register() {
                             helperText={formik.touched.password && formik.errors.password}
                           />
                         </Grid>
-                        <Grid item xs={12} sx={{ ml: "3em", mr: "3em" }}>
+                        <Grid item xs={12} sx={{ ml: { xs: "1em", sm: "3em" }, mr: { xs: "1em", sm: "3em" } }}>
                           <TextField
                             required
                             fullWidth
@@ -229,7 +231,7 @@ export default function Register() {
                             helperText={formik.touched.confirmpassword && formik.errors.confirmpassword}
                           />
                         </Grid>
-                        <Grid item xs={12} sx={{ ml: "5em", mr: "5em" }}>
+                        <Grid item xs={12} sx={{ ml: { xs: "1em", sm: "5em" }, mr: { xs: "1em", sm: "5em" } }}>
                           <Button
                             type="submit"
                             variant="contained"
@@ -247,7 +249,7 @@ export default function Register() {
                             Register
                           </Button>
                         </Grid>
-                        <Grid item xs={12} sx={{ ml: "3em", mr: "3em" }}>
+                        <Grid item xs={12} sx={{ ml: { xs: "1em", sm: "3em" }, mr: { xs: "1em", sm: "3em" } }}>
                           <Stack direction="row" spacing={2}>
                             <Typography
                               variant="body1"

@@ -313,3 +313,21 @@ header {
 }
 
 
+
+/* Mobile: two simple columns, no spanning or grid areas */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    grid-template-areas: none;
+    width: 100%;
+  }
+  .product-item,
+  .double-column,
+  .double-row,
+  .img1, .img2, .img3, .img4, .img5 {
+    grid-column: auto;
+    grid-row: auto;
+    grid-area: auto;
+  }
+}
